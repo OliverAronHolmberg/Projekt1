@@ -38,11 +38,11 @@ while running:
             break
         else:
             if num > guess:
-                print(bcolors.RED+ f"\nThe number is larger")
+                print(bcolors.RED+ f"The number is larger\n")
                 tries -= 1
                 continue
             elif num < guess:
-                print(bcolors.RED+"\nThe number is smaller")
+                print(bcolors.RED+"The number is smaller\n")
                 tries -=1
                 continue
             else:
