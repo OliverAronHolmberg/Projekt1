@@ -24,7 +24,7 @@ while running:
     while tries > 0:
         while True:
             guess = input(bcolors.DEFAULT + f"Guess {7-tries+1}/7, (q to exit): ")
-            if guess == "q":
+            if guess.lower() == "q":
                 running = False
                 break
             try:
@@ -54,10 +54,10 @@ while running:
     if running:
         while True:
             run_again = input(bcolors.DEFAULT + f"\nDo you want to play again?, (y/n): ")
-            if run_again == "y":
+            if run_again.lower() == "y":
                 os.system("cls")
                 break
-            elif run_again == "n":
+            elif run_again.lower() == "n":
                 running = False
                 break
             else:
