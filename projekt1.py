@@ -53,15 +53,13 @@ while running:
     print(bcolors.GREEN + f"\n----- The number was {num} -----")
     if running:
         while True:
-            run_again = input(bcolors.DEFAULT + f"\nDo you want to play again?, (y/n): ")
+            run_again = input(bcolors.DEFAULT + f"\nDo you want to play again?, (y/ENTER): ")
             if run_again.lower() == "y":
                 os.system("cls")
                 break
-            elif run_again.lower() == "n":
+            else:
                 running = False
                 break
-            else:
-                print("Please input (y/n)\n")
     else:
         break
             
