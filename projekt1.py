@@ -20,7 +20,7 @@ print(bcolors.BOLD + bcolors.PURPLE + f"""    ===============================\n=
 while running:
     tries = 7
     num = random.randint(1, 100)
-    print(bcolors.DEFAULT + f"Guess a number, 1-100, in 7 guesses\n")
+    print(bcolors.CYAN + f"Guess a number, 1-100, in 7 guesses\n")
     while tries > 0:
         while True:
             guess = input(bcolors.DEFAULT + f"Guess {7-tries+1}/7, (q to exit): ")
@@ -42,7 +42,7 @@ while running:
                 tries -= 1
                 continue
             elif num < guess:
-                print(bcolors.RED+"The number is smaller\n")
+                print(bcolors.BLUE+"The number is smaller\n")
                 tries -=1
                 continue
             else:
